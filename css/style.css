@@ -288,3 +288,41 @@ input {
         filter: drop-shadow(0 5px 8px gray);
         
     }
+
+    .options option{
+        background: #34495e;
+        color: white;
+        text-align: justify;
+        font-family: sans-serif;
+        user-select: all;
+        padding: 100px 10px;
+        font-size: larger;
+    }
+
+    .options select {
+        /* custom */
+        padding: 10px 5px;
+        column-fill: auto;
+        cursor: pointer;
+        border: #34495e solid;
+    }
+
+    .options label{
+        border: white solid;
+        font-size: large;
+        color: #34495e;
+        background-color: lemonchiffon;
+    }
+    .options button{
+        color: white;
+        background: #000;
+        margin-top: 10px;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.9s;
+    }
+    .options button:hover{
+        background: white;
+        color: #000;
+    }
