@@ -236,6 +236,7 @@ input {
         overflow:hidden;
         font-size: 1rem;
         border-radius: 15px 15px;
+        filter: drop-shadow(0 5px 8px gray);
         
     }
     .container-card button{
@@ -250,4 +251,40 @@ input {
     .container-card button:hover{
         background: white;
         color: #000;
+    }
+    .container{
+        border: none;
+        border: 1px solid grey;
+        width: 400px;
+    }
+    .container-card-new button{
+        color: white;
+        background: #000;
+        margin-right: auto;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.9s;
+    }
+    .container-card-new button:hover{
+        background: white;
+        color: #000;
+        
+    }
+    .container-card-new {
+        color: white;
+        float: right;
+        margin-right: 10px;
+        margin-top: 100px;
+        text-decoration:none;
+        text-align:left;
+        background: #888888a6;
+        border: none;
+        width: 400px;
+        padding: 0.7rem 1.5rem;
+        overflow:hidden;
+        font-size: 1rem;
+        border-radius: 15px 15px;
+        filter: drop-shadow(0 5px 8px gray);
+        
     }
