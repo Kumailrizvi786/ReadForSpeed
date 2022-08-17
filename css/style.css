@@ -335,12 +335,10 @@ input {
         height: auto;
         justify-content: center;
     }
-    .text-field1 input{
-            width: 200px;
-            height: 20px;
-            border: none;
-            border: 1px solid;
-            justify-content: end;
+    .text-field1 li input{
+        float: left;
+        list-style: none;
+            
 
     }
 
@@ -375,4 +373,29 @@ input {
         border-radius: 15px 15px;
         filter: drop-shadow(0 5px 8px gray);
         
+    }
+    #rating{
+
+        list-style: none;
+        float: left;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    #rating li{
+        float: inline-end;
+
+        background-image: url('..//img/reat.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        height: 40px;
+        width: 40px;
+        float: left;
+        display: flex;
+        margin-left: 5px;
+
+    }
+    #rating li:hover{
+        background: orange;
+        opacity: 0.1;
     }
