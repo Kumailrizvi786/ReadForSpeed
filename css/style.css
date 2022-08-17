@@ -374,28 +374,39 @@ input {
         filter: drop-shadow(0 5px 8px gray);
         
     }
-    #rating{
-
-        list-style: none;
-        float: left;
-        margin-left: 70px;
-        margin-top: 10px;
-    }
-    #rating li{
-        float: inline-end;
-
-        background-image: url('..//img/reat.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-        height: 40px;
-        width: 40px;
-        float: left;
-        display: flex;
-        margin-left: 5px;
-
-    }
-    #rating li:hover{
-        background: orange;
-        opacity: 0.1;
-    }
+   
+.rating {
+    position: relative;
+    width: 180px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 2px #b3acac;
+ }
+ 
+ .rating__result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-10px) translateX(-5px);
+    z-index: -9;
+    font: 3em Arial, Helvetica, sans-serif;
+    color: #ebebeb8e;
+    pointer-events: none;
+ }
+ 
+ .rating__star {
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #dabd18b2;
+    transition: filter linear .3s;
+ }
+ 
+ .rating__star:hover {
+    filter: drop-shadow(1px 1px 4px gold);
+ }
