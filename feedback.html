@@ -1,3 +1,16 @@
+<?php
+$dbhost="localhost";
+$dbuser="root";
+$dbpassword="";
+$dbname="project";
+
+if(!$con = mysqli_connect($dbhost,$dbuser,$dbpassword,$dbname))
+{
+    die("failed to connect");
+}
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,25 +33,30 @@
 <button class="btn right"><a href="Signup.html">Signup</a></button>
 
 </nav>
+
+<h1>This is Feedback page <i>Kumail</i> Working On it </h1>
 <section class="sctn">
     <form action="thanks.html">
           <div class="heading">
               <h2>Feedback</h2>
               <hr>
-              </div>
-          <div class="text-field">
-            <label>Name</label>
-              <input type="text" name="name" placeholder="username">
-              
           </div>
+            <div class="text-field">
+                <label>User Name</label>
+                <input type="text" name="name" placeholder="username">
+            </div>
   
         <div class="text-field">
             <label>Your Feedback</label>
-            <textarea rows="4" cols="25" placeholder="your feedback here "></textarea>
-            
-        </div>
- 
+            <textarea rows="4" cols="25" placeholder="your feedback here "></textarea>     
 
+        </div>
+
+        <div class="text-field1">
+            <label>Rate Us</label>
+            <input type="radio" name="rating" value="1">1  
+            <input type="radio" name="rating" value="2">2
+            <input type="radio" name="rating" value="3">3
         </div>
         <div class="sub-btn">
             <input type="submit" class="sub-btn">

@@ -326,3 +326,53 @@ input {
         background: white;
         color: #000;
     }
+
+    .text-field1{
+        padding: 0px;
+        float: left;
+        margin-top: 10px;
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+    .text-field1 input{
+            width: 200px;
+            height: 20px;
+            border: none;
+            border: 1px solid;
+            justify-content: end;
+
+    }
+
+
+    .container-card-new1 button{
+        color: white;
+        background: #000;
+        margin-right: auto;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: all 0.9s;
+    }
+    .container-card-new1 button:hover{
+        background: white;
+        color: #000;
+        
+    }
+    .container-card-new1 {
+        color: white;
+        float: right;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        text-decoration:none;
+        text-align:left;
+        background: #888888a6;
+        border: none;
+        width: 400px;
+        padding: 0.7rem 1.5rem;
+        overflow:hidden;
+        font-size: 1rem;
+        border-radius: 15px 15px;
+        filter: drop-shadow(0 5px 8px gray);
+        
+    }
